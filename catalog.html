@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo">
           <img src="img/header-logo.png" alt="Логотип" width="154" height="64">
         </div>
@@ -19,138 +19,134 @@
           </ul>
         </nav>
         <div class="user-block">
-          <div class="header-search">
-            <a href="#">Поиск</a>
-          </div>
-          <div class="header-login">
-            <a href="#">Вход</a>
-          </div>
-          <div class="header-basket">
-            <a href="#">2 товара</a>
-          </div>
+          <a class="header-search" href="#">Поиск</a>
+          <a class="header-login" href="#">Вход</a>
+          <a class="header-basket" href="#">2 товара</a>
         </div>
-        <section class="working-hours">
+      </div>
+    </header>
+    <main class="container clearfix">
+      <div class="clearfix">
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a>Сливочное</a></li>
+          </ul>
+        </nav>
+        <section class="cataog-working-hours">
           <p>С 10 до 20, ежедневно</p>
           <p>8 812 450-25-25</p>
         </section>
       </div>
-    </header>
-    <main class="container">
-      <nav class="breadcrumbs">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Сливочное</a></li>
-        </ul>
-      </nav>
-      <h1>Сливочное мороженое</h1>
-      <div class="main-filter">
-        <form>
-          <select name="price-sort">
-            <option>по популярности</option>
-            <option>сначала недорогие</option>
-            <option>сначала дорогие</option>
-            <option>по жирности</option>
-          </select>
-          <div class="price-range">
-
-          </div>
-          <div class="fat-range">
-            <p>Жирность:</p>
-            <input type="radio" name="fat-percent" id="fat-0">
-            <label for="fat-0">0%</label>
-            <input type="radio" name="fat-percent" id="fat-10" checked>
-            <label for="fat-10">до 10%</label>
-            <input type="radio" name="fat-percent" id="fat-30">
-            <label for="fat-30">до 30%</label>
-            <input type="radio" name="fat-percent" id="fat-30+">
-            <label for="fat-30+">выше 30%</label>
-          </div>
-          <div class="filler">
-            <p>Наполнители:</p>
-            <input type="checkbox" name="filler-item" id="filler-1" checked>
-            <label for="filler-1">шоколадные</label>
-            <input type="checkbox" name="filler-item" id="filler-2" checked>
-            <label for="filler-2">сахарные присыпки</label>
-            <input type="checkbox" name="filler-item" id="filler-3">
-            <label for="filler-3">фрукты</label>
-            <input type="checkbox" name="filler-item" id="filler-4">
-            <label for="filler-4">сиропы</label>
-            <input type="checkbox" name="filler-item" id="filler-5">
-            <label for="filler-5">джемы</label>
-          </div>
-          <button>Применить</button>
-        </form>
-      </div>
-      <div class="cremy-item">
+      <h1 class="catalog-main-title">Сливочное мороженое</h1>
+      <form class="main-filter clearfix">
+        <fieldset class="price-sort">
+          <legend>Сортировка:</legend>
+            <select>
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
+        </fieldset>
+        <fieldset class="price-range">
+        </fieldset>
+        <fieldset class="fat-range">
+          <legend>Жирность:</legend>
+          <input type="radio" name="fat-percent" id="fat-0">
+          <label for="fat-0">0%</label>
+          <input type="radio" name="fat-percent" id="fat-10" checked>
+          <label for="fat-10">до 10%</label>
+          <input type="radio" name="fat-percent" id="fat-30">
+          <label for="fat-30">до 30%</label>
+          <input type="radio" name="fat-percent" id="fat-30+">
+          <label for="fat-30+">выше 30%</label>
+        </fieldset>
+        <fieldset class="filler">
+          <legend>Наполнители:</legend>
+          <input type="checkbox" name="filler-item" id="filler-1" checked>
+          <label for="filler-1">шоколадные</label>
+          <input type="checkbox" name="filler-item" id="filler-2" checked>
+          <label for="filler-2">сахарные присыпки</label>
+          <input type="checkbox" name="filler-item" id="filler-3">
+          <label for="filler-3">фрукты</label>
+          <input type="checkbox" name="filler-item" id="filler-4">
+          <label for="filler-4">сиропы</label>
+          <input type="checkbox" name="filler-item" id="filler-5">
+          <label for="filler-5">джемы</label>
+        </fieldset>
+        <button>Применить</button>
+      </form>
+      <div class="cremy-item clearfix">
         <section>
-          <img src="img/catalog-item1.png" alt="Товар1" width="200" height="200">
+          <img src="img/item1.jpg" alt="Товар1" width="267" height="267">
           <p>310/кг</p>
           <a href="#">Сливочное с апельсиновым джемом и цитросовой стружкой</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item2.png" alt="Товар2" width="200" height="200">
+          <img src="img/item2.jpg" alt="Товар2" width="267" height="267">
           <p>380/кг</p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item3.png" alt="Товар3" width="200" height="200">
+          <img src="img/item3.jpg" alt="Товар3" width="267" height="267">
           <p>355/кг</p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item4.png" alt="Товар4" width="200" height="200">
+          <img src="img/item4.jpg" alt="Товар4" width="267" height="267">
           <p>415/кг</p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item21.png" alt="Товар21" width="200" height="200">
+          <img src="img/item21.jpg" alt="Товар21" width="267" height="267">
           <p>325/кг</p>
           <a href="#">Сливочное с брусничным джемом</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item22.png" alt="Товар22" width="200" height="200">
+          <img src="img/item22.jpg" alt="Товар22" width="267" height="267">
           <p>410/кг</p>
           <a href="#">Сливочное-черничное с цельными ягодами черники</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item23.png" alt="Товар23" width="200" height="200">
+          <img src="img/item23.jpg" alt="Товар23" width="267" height="267">
           <p>375/кг</p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item24.png" alt="Товар24" width="200" height="200">
+          <img src="img/item24.jpg" alt="Товар24" width="267" height="267">
           <p>320/кг</p>
           <a href="#">Сливочное с шоколадной стружкой</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item31.png" alt="Товар31" width="200" height="200">
+          <img src="img/item31.jpg" alt="Товар31" width="267" height="267">
           <p>440/кг</p>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item32.png" alt="Товар32" width="200" height="200">
+          <img src="img/item32.jpg" alt="Товар32" width="267" height="267">
           <p>435/кг</p>
           <a href="#">Сливочное с ментоловым сиропом</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item33.png" alt="Товар33" width="200" height="200">
+          <img src="img/item33.jpg" alt="Товар33" width="267" height="267">
           <p>355/кг</p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
           <a class="button" href="#">Быстрый Просмотр</a>
         </section>
         <section>
-          <img src="img/catalog-item34.png" alt="Товар34" width="200" height="200">
+          <img src="img/item34.jpg" alt="Товар34" width="267" height="267">
           <p>420/кг</p>
           <a href="#">Сливочное с мятным сиропом</a>
           <a class="button" href="#">Быстрый Просмотр</a>
